@@ -1,8 +1,7 @@
 def fibo(N):
-	if N <= 1:
-		return N
-	else:
-		return fibo(N-1)+fibo(N-2)
-
-if __name__=="__main__":
-	print("fibo(5)",fibo(5))
+	x=1
+	y=0
+	for i in range(N):
+		x=x+y
+		y=x-y
+	return x
